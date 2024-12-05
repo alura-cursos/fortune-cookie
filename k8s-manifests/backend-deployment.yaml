@@ -16,7 +16,10 @@ spec:
     spec:
       containers:
       - name: backend
-        image: localhost/fortune-backend:latest
+        image: rafaelvzago/fortune-backend-rust:latest
         ports:
         - containerPort: 8080
+        env:
+        - name: API_URL
+          value: "https://api.adviceslip.com/advice"
 

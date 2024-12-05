@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: localhost/fortune-frontend:latest
+        image: rafaelvzago/fortune-frontend:latest
         ports:
         - containerPort: 80
 
